@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  todo-envoy:
+    build:
+      context: ./config
+      dockerfile: Dockerfile-gateway
+    ports:
+      - '9901:9901'
+      - '8080:8080'
